@@ -77,35 +77,38 @@ export const ContactForm = () => {
   }
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className="w-full flex flex-col justify-center items-center"
-    >
-      <div className="w-full">
-        <input
-          type="text"
-          placeholder="Name:"
-          value={name}
-          name="name"
-          onChange={handleChange}
-          className="w-[90%] border p-2 text-black rounded-md mb-4 border-slate-400"
-        />
-      </div>
-      <div className="w-full">
-        <input
-          type="tel"
-          placeholder="Phone Number:"
-          value={number}
-          name="number"
-          onChange={handleChange}
-          className="w-[90%] border p-2 text-black rounded-md mb-4 border-slate-400"
-        />
-      </div>
-      <div>
-        <button className=" py-2 px-2.5 bg-blue-600 duration-300 rounded hover:bg-blue-800 hover:rounded-md text-white">
-          ADD to List
-        </button>
-      </div>
-    </form>
+    <div className="text-center w-full md:w-1/2 bg-slate-200 p-5 rounded shadow-xl mt-10">
+      <p className="text-2xl mb-10 ">ADD New Contact</p>
+      <form
+        onSubmit={handleSubmit}
+        className="w-full flex flex-col justify-center items-center"
+      >
+        <div className="w-full">
+          <input
+            type="text"
+            placeholder="Name:"
+            value={name}
+            name="name"
+            onChange={handleChange}
+            className="w-[90%] border p-2 text-black rounded-md mb-4 border-slate-400"
+          />
+        </div>
+        <div className="w-full">
+          <input
+            type="tel"
+            placeholder="Phone Number:"
+            value={number}
+            name="number"
+            onChange={handleChange}
+            className="w-[90%] border p-2 text-black rounded-md mb-4 border-slate-400"
+          />
+        </div>
+        <div>
+          <button className=" py-2 px-2.5 bg-blue-600 duration-300 rounded hover:bg-blue-800 hover:rounded-md text-white">
+            ADD to List
+          </button>
+        </div>
+      </form>
+    </div>
   );
 };
