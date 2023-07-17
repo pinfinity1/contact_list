@@ -1,13 +1,3 @@
-// import { ContactEditForm } from "../Componenets/ContactEditForm";
-
-// export const EditContact = () => {
-//   return (
-//     <div className="mt-10">
-//       <ContactEditForm />
-//     </div>
-//   );
-// };
-
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
